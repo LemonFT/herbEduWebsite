@@ -1,0 +1,53 @@
+// button
+button{
+    height: 43px;
+    user-select: none;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    + button{
+        margin-left: 10px;
+    }
+}
+.btn-s-big{
+    width: 300px;
+}
+.btn-s-full{
+    width: 100%;
+}
+.btn-primary, .btn-normal{
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: all .1s;
+    &:hover{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+}
+.btn-primary {
+    color: white;
+    background-color: var(--btn-primary-bg);
+    &:hover {
+        background-color: var(--btn-primary-hover);
+    }
+    &:active {
+        background-color: var(--btn-primary-active);
+    }
+}
+
+.btn-normal {
+    color: var(--btn-normal-color);
+    background-color: var(--btn-normal-bg);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    &:hover {
+        background-color: var(--btn-normal-hover);
+    }
+    &:active {
+        background-color: var(--btn-normal-active);
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .btn-primary, .btn-normal{
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}

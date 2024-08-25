@@ -1,0 +1,19 @@
+.ant-input {
+    height: 46px !important;
+}
+.ant-otp,
+.ant-flex {
+    max-width: 350px !important;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .ant-flex{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        .ant-otp{
+            width: 55vw !important;
+        }
+    }
+}

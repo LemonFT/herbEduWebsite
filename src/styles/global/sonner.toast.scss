@@ -1,0 +1,27 @@
+.toaster-toast{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 25px;
+    font-size: 14px;
+    border: none !important;
+    background-color: white !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+    button{
+        position: absolute !important;
+        width: 20px !important;
+        height: 20px !important;
+        left: auto !important;
+        right: -10px !important;
+        top: 0px !important;
+    }
+    div{
+        div{
+            font-size: 14px !important;
+            font-weight: 400 !important;
+            color: black !important;
+        }
+    }
+}

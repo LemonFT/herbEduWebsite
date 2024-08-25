@@ -1,0 +1,64 @@
+:root {
+    --white: rgba(255, 255, 255, 1);
+}
+.darkTheme {
+    --main: rgba(0, 0, 0, 1);
+    --inverse: rgba(255, 255, 255, 1);
+
+    --sidebar-bg-color: rgba(0, 51, 102, 0.9);
+    --sidebar-bg-link: rgba(255, 255, 255, 0.3);
+    --sidebar-color-link: rgba(255, 255, 255, 1);
+    --sidebar-color-icon: rgba(255, 255, 255, 1);
+    --sidebar-bg-link-focus: rgba(255, 255, 255, 0.7);
+    --sidebar-color-link-focus: rgba(0, 0, 0, 1);
+    --sidebar-color-icon-focus: rgba(0, 0, 0, 1);
+    --sidebar-bg-link-active: rgba(255, 255, 255, 1);
+    --sidebar-color-link-active: rgba(0, 0, 0, 1);
+    --sidebar-color-icon-active: rgba(0, 0, 0, 1);
+
+    --auth-bg: rgba(0, 51, 102, 0.5);
+    --auth-text: rgba(255, 255, 255, 1);
+    --auth-input: rgba(255, 255, 255, .8);
+
+    --btn-primary-bg: rgba(0, 51, 102, 1);
+    --btn-primary-hover: rgba(0, 51, 102, 0.7);
+    --btn-primary-active: rgba(0, 51, 102, 0.9);
+
+    --btn-normal-color: rgba(255,255,255,1);
+    --btn-normal-bg: rgba(102, 105, 108, 0.9);
+    --btn-normal-hover: rgba(102, 105, 108, 0.7);
+    --btn-normal-active: rgba(102, 105, 108, 0.9);
+
+    --box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.lightTheme {
+    --main: rgba(255, 255, 255, 1);
+    --inverse: rgba(0, 0, 0, 0.8);
+
+    --sidebar-bg-color: rgba(152, 196, 240, 0.9);
+    --sidebar-bg-link: rgba(0, 51, 102, .3);
+    --sidebar-color-link: rgba(255, 255, 255, 1);
+    --sidebar-color-icon: rgba(255, 255, 255, 1);
+    --sidebar-bg-link-focus: rgba(0, 51, 102, .7);
+    --sidebar-color-link-focus: rgba(255, 255, 255, 1);
+    --sidebar-color-icon-focus: rgba(255, 255, 255, 1);
+    --sidebar-bg-link-active: rgba(0, 51, 102, 1);
+    --sidebar-color-link-active: rgba(255, 255, 255, 1);
+    --sidebar-color-icon-active: rgba(255, 255, 255, 1);
+
+    --btn-primary-bg: rgb(27, 122, 224);
+    --btn-primary-hover: rgb(5, 105, 212);
+    --btn-primary-active: rgb(6, 94, 188);
+
+    --btn-normal-color: black;
+    --btn-normal-bg: white;
+    --btn-normal-hover: #ded9d9;
+    --btn-normal-active: #777;
+
+    --auth-bg: rgba(255, 255, 255, .5);
+    --auth-text: rgba(102, 102 ,102, 1);
+    --auth-input: rgba(255, 255, 255, 1);
+
+    --box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}

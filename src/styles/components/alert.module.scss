@@ -1,0 +1,144 @@
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-100%) translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) translateX(-50%);
+  }
+}
+
+@keyframes slideFromBottom {
+  from {
+    transform: translateY(100%) translateX(-50%);
+  }
+  to {
+    transform: translateY(0) translateX(-50%);
+  }
+}
+.warning {
+  .icon {
+    svg {
+      fill: rgba(235, 173, 19, 0.8) !important;
+    }
+  }
+}
+.success {
+  .icon {
+    svg {
+      fill: rgba(5, 193, 68, 0.8) !important;
+    }
+  }
+}
+.info {
+  .icon {
+    svg {
+      fill: rgba(13, 153, 255, 0.8) !important;
+    }
+  }
+}
+.error {
+  .icon {
+    svg {
+      fill: rgba(220, 47, 28, 0.8) !important;
+    }
+  }
+}
+.center-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: slideFromTop;
+}
+.top-left {
+  top: 0px;
+  left: 0px;
+  animation-name: slideFromLeft;
+}
+.top-right {
+  top: 0px;
+  right: 0px;
+  animation-name: slideFromRight;
+}
+.top-center {
+  top: 20px;
+  left: 50%;
+  animation-name: slideFromTop;
+}
+.center-left {
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  animation-name: slideFromLeft;
+}
+.center-right {
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  animation-name: slideFromRight;
+}
+.bottom-center {
+  bottom: 0px;
+  left: 50%;
+  animation-name: slideFromBottom;
+}
+.alert {
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 101;
+  border-radius: 5px;
+  min-width: 150px;
+  max-width: 80vw;
+  height: auto;
+  max-height: 100%;
+  min-height: 40px;
+  padding: 0px 15px;
+  transition: all 0.5s;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  background-color: white;
+  box-shadow:
+    rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px !important;
+  .icon {
+    margin-right: 10px;
+  }
+  .message {
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Open Sans",
+      "Helvetica Neue",
+      sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
